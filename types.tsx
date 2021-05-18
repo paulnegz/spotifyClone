@@ -22,15 +22,27 @@ export type TabTwoParamList = {
   TabTwoScreen: undefined;
 };
 
+// export type Albumformat = {
+//     id: string;
+//     imageUrl: string;
+//     artistHeadline: string;
+// };
 export type Albumformat = {
-    id: string;
-    imageUrl: string;
-    artistHeadline: string;
+  id: string;
+  name: string;
+  by: string;
+  numberOfLikes: number;
+  artistsHeadline: string;
+  imageUrl: string;
+  songs: array;
 };
+
 
 export type Song = {
   id: string;
   imageUrl: string;
   title: string;
   artist: string;
+  
 }
+
