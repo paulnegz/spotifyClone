@@ -1,6 +1,5 @@
 import {StyleSheet} from 'react-native';
-import babelConfig from '../../babel.config';
-import Colors from '../../constants/Colors'
+
 const styles = StyleSheet.create({
     container:{
         position: 'absolute',

@@ -15,7 +15,6 @@ const song= {
     isLiked: false,
 }
 
-
 const PlayerWidget = () =>{ 
     const [sound, setSound] = useState<Sound|null>(null);
     const [isPlaying, setIsPlaying] = useState<boolean>(false);
@@ -34,19 +33,16 @@ const PlayerWidget = () =>{
         if (sound) {
         await sound.unloadAsync();
         }
-
         const { sound: newSound } = await Sound.createAsync(
         { uri: song.url },
         { shouldPlay: isPlaying },
         onPlaybackStatusUpdate
         )
-
         setSound(newSound)
     }
 
     useEffect(() => {
         // effect
-        // console.log("PAFE LOADED")
         playCurrentSong();
         setIsLiked(song.isLiked);
         return sound
@@ -57,7 +53,6 @@ const PlayerWidget = () =>{
     }, [song])
 
     const onPlayPausePress = async () => {
-        // console.log("in function");
         if (!sound){
             return;
         }
