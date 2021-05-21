@@ -16,7 +16,7 @@ const AlbumScreen = ()=>{
     const route = useRoute();
 
     useEffect(() => {
-        console.log(route);
+        // console.log(route);
         // return () => {
         //     // cleanup
         // }

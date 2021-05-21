@@ -3,15 +3,23 @@ import babelConfig from '../../babel.config';
 import Colors from '../../constants/Colors'
 const styles = StyleSheet.create({
     container:{
-        flexDirection: 'row',
         position: 'absolute',
         bottom: 48,
         backgroundColor: '#131313',
         width: '100%',
         borderWidth: 3,
         borderColor: 'black',
-        alignItems: 'center',
+        
 
+    },
+    progress:{
+        height: 3,
+        // width: '100%',
+        backgroundColor: '#bcbcbc',
+    },
+    row: {
+        alignItems: 'center',
+        flexDirection: 'row',
     },
     title: {
         color: 'white',
